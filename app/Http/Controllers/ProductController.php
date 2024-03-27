@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProductRequest;
 use App\Models\Products;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
+use App\Http\Requests\ProductRequest;
 
 
 class ProductController extends Controller
@@ -26,7 +26,7 @@ class ProductController extends Controller
     public function addproduct(Request $request) 
 {
     $validated = $request->validate([
-        'photos' => 'required|image|mimes:png,jpg,jpeg',
+        'gallery_product' => 'required|image|mimes:png,jpg,jpeg',
         'product_name' => 'required|max:255',
         'price' => 'required',
         'ingredients' => 'required',
