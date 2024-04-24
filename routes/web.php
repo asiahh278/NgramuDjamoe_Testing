@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+# Products > showing all product
 Route::get('/product', function () {
     return view('admin.products');
 });

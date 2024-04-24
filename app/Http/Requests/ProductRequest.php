@@ -26,7 +26,7 @@ class ProductRequest extends FormRequest
 
     public function messages(){
         return[
-            'required' => 'isian: attribute harus di isi', 
+            'required' => 'harap isi terlebih dahulu', 
             'user.required' => 'nama pengguna harus di isi' 
         ];
     }

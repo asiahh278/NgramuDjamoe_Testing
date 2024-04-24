@@ -6,7 +6,8 @@ use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 use App\Http\Requests\ProductRequest;
-
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
 {
@@ -22,7 +23,7 @@ class ProductController extends Controller
     }
 
 
-    # POST -> ADDING NEW PRODUCT
+    # POST (store) -> ADDING NEW PRODUCT
     public function addproduct(Request $request) 
 {
     $validated = $request->validate([
@@ -41,5 +42,10 @@ class ProductController extends Controller
     return view('admin.addproduct');
    }
 
+   public function show(Request $request) 
+{
+
+    
+}
     
 }

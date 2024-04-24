@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Images extends Model
 {
-    public function images() {
-        return $this->hasMany(Products::class);
+    public function Products() {
+        return $this->belongsTo(Products::class);
     }
     
     protected $fillable = [
