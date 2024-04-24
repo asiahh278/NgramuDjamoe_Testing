@@ -44,11 +44,11 @@ Route::controller(ProductController::class)->group(function () {
     Route::post('/addproduct', 'addproduct'); # send data to server
     Route::get('/product', 'create'); # take data from server
 
-    Route::get('/detailproduct', 'detailproduct'); # read data
-    Route::get('/product', 'edit'); 
+    // Route::get('/detailproduct', 'detailproduct'); # read data
+    // Route::get('/product', 'edit'); 
 
-    Route::put('/updateproduct', 'updateproduct'); # send data to server for update
-    Route::delete('/product', 'destroy');
+    // Route::put('/updateproduct', 'updateproduct'); # send data to server for update
+    // Route::delete('/product', 'destroy');
 
 
 });

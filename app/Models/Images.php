@@ -11,5 +11,9 @@ class Images extends Model
         return $this->hasMany(Products::class);
     }
     
+    protected $fillable = [
+        'gallery_product'
+    ];
+
     use HasFactory;
 }

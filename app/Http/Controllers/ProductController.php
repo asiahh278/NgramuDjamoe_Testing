@@ -26,12 +26,12 @@ class ProductController extends Controller
     public function addproduct(Request $request) 
 {
     $validated = $request->validate([
-        'gallery_product' => 'required|image|mimes:png,jpg,jpeg',
         'product_name' => 'required|max:255',
+        'category' => 'required',
         'price' => 'required',
-        'ingredients' => 'required',
         'quantity' => 'required',
-        'description' => 'required|max:1000',
+        'ingredients' => 'required',
+        'description' => 'required|min:10',
     ]);
  
     return redirect('/product');

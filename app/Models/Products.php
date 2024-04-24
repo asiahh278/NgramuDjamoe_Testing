@@ -14,12 +14,12 @@ class Products extends Model
     protected $table = 'product';
 
     protected $fillable = [
-        'photos', 
-        'nama_barang',
-        'harga_barang',
-        'bahan',
-        'jumlah',
-        'deskripsi'
+        'product_name',
+        'category',
+        'price',
+        'quantity',
+        'ingredients',
+        'description'
     ];
     
     use HasFactory;
